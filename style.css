@@ -61,9 +61,9 @@ main {
   align-items: center;
 }
 
-.order-summary__plan {
+.alert {
   border-radius: 0.75rem;
-  padding: 1rem;
+  padding: 1.25rem;
   background-color: hsl(225, 100%, 98%);
   width: 100%;
   box-sizing: border-box;
@@ -71,6 +71,13 @@ main {
   justify-content: space-between;
   align-items: center;
   font-size: 0.9rem;
+}
+
+.order-summary__plan {
+  display: flex;
+  gap: 1rem;
+  line-height: 1.25rem;
+  align-items: center;
 }
 
 h2 {
@@ -83,6 +90,11 @@ p {
   text-align: center;
   line-height: 1.6rem;
   color: hsl(224, 23%, 55%);
+}
+
+b {
+  font-weight: 900;
+  color: black;
 }
 
 .btn {
@@ -102,4 +114,16 @@ p {
 
 .btn--secondary {
   color: hsl(224, 23%, 55%);
+}
+
+@media only screen and (min-width: 600px) {
+  .order-summary-card {
+    max-width: 25rem;
+  }
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 }
